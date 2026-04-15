@@ -212,7 +212,13 @@ export default function Home() {
       <section id="about" className="py-24 bg-[#0a0e1a]">
         <div className="max-w-3xl mx-auto px-6">
           <SectionTitle>About Me</SectionTitle>
-          <div className="space-y-4 text-[#8892b0]">
+          <div className="flex flex-col md:flex-row gap-10 items-start">
+          <img
+            src="/headshot.jpg"
+            alt="Benjamin Nguyen"
+            className="w-48 h-48 rounded-2xl object-cover object-top border-2 border-[#64ffda33] shrink-0 mx-auto md:mx-0"
+          />
+      <div className="space-y-4 text-[#8892b0]">
             <Reveal delay={0}>
               <p>
                 I&apos;m a Computer Systems Engineering student at{" "}
@@ -252,7 +258,8 @@ export default function Home() {
             </Reveal>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
       {/* ── SKILLS ────────────────────────────────────────────────────────── */}
       <section id="skills" className="py-24 bg-[#111827]">
