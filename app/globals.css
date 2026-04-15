@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 222 47% 7%;
+    --foreground: 226 100% 90%;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-[#0a0e1a] text-[#ccd6f6] font-sans overflow-x-hidden;
+  }
+
+  ::selection {
+    @apply bg-[#64ffda33] text-[#64ffda];
+  }
+}
+
+@layer utilities {
+  .section-divider::after {
+    content: '';
+    display: inline-block;
+    flex: 1;
+    height: 1px;
+    background: #1e2d40;
+    margin-left: 1rem;
+    vertical-align: middle;
+  }
+}
